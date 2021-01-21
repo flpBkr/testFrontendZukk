@@ -6,3 +6,15 @@
 .list {
   margin: 30px 0;
 }
+
+.list-form {
+  margin: 30px auto;
+}
+
+.list-items {
+  margin: 30px auto;
+}
+
+.btn-logout {
+  margin-bottom: 40px;
+}
