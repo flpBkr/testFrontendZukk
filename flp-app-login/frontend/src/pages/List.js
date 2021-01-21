@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import api from '../api';
 import { Context } from "../Context/AuthContext";
 import ListForm from './ListForm';
-import ListItems from './ListItems';
+
 import './Pages.css';
 
 export default function List() {
@@ -28,7 +28,6 @@ export default function List() {
           ))}
         </p>
 
-        <ListItems />
         <ListForm />
 
         <button type="button" class="btn btn-outline-dark btn-sm btn-logout" onClick={handleLogout}>Log Out</button>
