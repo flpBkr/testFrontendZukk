@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { Context } from "./Context/AuthContext";
 
 import Login from './pages/Login';
-import Users from './pages/Users';
+import List from './pages/List';
 
 function CustomRoute({ isPrivate, ...rest }) {
   const { loading, authenticated } = useContext(Context);
@@ -24,7 +24,7 @@ export default function Routes() {
   return (
     <Switch>
       <CustomRoute exact path="/login" component={Login} />
-      <CustomRoute isPrivate exact path="/users" component={Users} />
+      <CustomRoute isPrivate exact path="/list" component={List} />
     </Switch>
   );
 }

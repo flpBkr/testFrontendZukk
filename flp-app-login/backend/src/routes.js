@@ -9,7 +9,6 @@ router.post('/authenticate', (req, res) => {
   const user = {
     id: 1,
     name: 'admin',
-    company: 'DevAcademy',
     password: "1234"
   };
 
@@ -24,16 +23,13 @@ router.post('/authenticate', (req, res) => {
  */
 // router.use(authMiddleware);
 
-router.get('/users', async (req, res) => {
+router.get('/list', async (req, res) => {
   return res.json([
     {
       id: 1,
       name: 'admin',
       password: "1234"
     },
-    // {
-    //   user: "admin", password: "1234"
-    // }
   ]);
 });
 

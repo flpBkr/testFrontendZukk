@@ -21,7 +21,6 @@ function App() {
           <Routes />
         </Router>
       </AuthProvider>
-      <h1>TESTE</h1>
     </div>
   );
 }
